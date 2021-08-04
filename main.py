@@ -81,6 +81,6 @@ notifier = ServerJiangNotifier(
     sess=requests.Session()
 )
 print(f'通过「{notifier.PLATFORM_NAME}」给用户发送通知')
-notifier.notify(success=successs, msg=ress,username=usernames,name=names)
+# notifier.notify(success=successs, msg=ress,username=usernames,name=names)
 
 
