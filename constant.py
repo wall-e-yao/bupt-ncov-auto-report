@@ -1,24 +1,7 @@
 import os
-# 用户名密码  按照形式往下加即可
-users=[
-    ('2019140520','11070315','云神',0),
-    ('2019140521','aa123456','饶兄',0),
-    ('2020110643','11240650','力翚',0),
-    ('2020140534','06181130','伟哥',0),
-    ('2020140537','14250369xmh9','豪哥',0),
-    ('2020140547','10129211','py',0),
-    ('2020140536','04051935','超哥',0),
-    ('2020140538','05293310','zp',0),
-    # 新的用户 按照该形式 ('用户名','密码','名字',0/1), 加入到下一行即可
-    # 0代表不填固定信息，而是采用上一次填报数据  1代表填固定信息，采用下面的INFO变量数据
-    ]
-secret=os.environ['USERS']
-print(f'secret:{secret}')
-u=eval(secret)
-print(f'u:{secret}')
 
-# 默认为zp的server key  你也可以创建自己的  发送消息数量每天有5条限制
-SERVER_KEY = 'SCT35733TYXDeoSc5vkvMEskbCQ4cSuJY'
+USERS=eval(os.environ['USERS'])
+SERVER_KEY = os.environ['SERVER_KEY']
 
 LOGIN_API = 'https://app.bupt.edu.cn/uc/wap/login/check'
 GET_API = 'https://app.bupt.edu.cn/ncov/wap/default/index'

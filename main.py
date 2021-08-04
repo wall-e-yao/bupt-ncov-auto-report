@@ -3,10 +3,7 @@ from constant import *
 
 import requests, re, json, copy, traceback
 
-notifier = ServerJiangNotifier(
-    sckey=SERVER_KEY,
-    sess=requests.Session()
-)
+
 session = requests.Session()
 
 
@@ -62,7 +59,7 @@ def ncov_report(username, password, name, is_useold):
     return post_data,report_res.text
 
 successs,ress,usernames,names = [],[],[],[]
-for user in  users:
+for user in  USERS:
     success=True
     username,password,name,useold=user
     try:
@@ -78,7 +75,11 @@ for user in  users:
     usernames+=[username]
     names+=[name]
 
-# 将执行结果通过 INotifier 通知用户
+
+notifier = ServerJiangNotifier(
+    sckey=SERVER_KEY,
+    sess=requests.Session()
+)
 print(f'通过「{notifier.PLATFORM_NAME}」给用户发送通知')
 notifier.notify(success=successs, msg=ress,username=usernames,name=names)
 
