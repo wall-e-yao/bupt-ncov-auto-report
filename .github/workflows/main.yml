@@ -1,9 +1,10 @@
 name: BUPT ncov auto-report Python+Actions V3.0
-
+env:
+  TZ: Asia/Shanghai
 on:
   schedule:
 #    - cron: "10 1,7 * * *"
-     - cron: "3 19 * * *"
+     - cron: "8 19 * * *"
   push:
 
 jobs:
