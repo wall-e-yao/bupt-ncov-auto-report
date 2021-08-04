@@ -92,6 +92,6 @@ cron里的"10 1,7 * * \*"代表每天的1：10和7点10，[https://crontab.guru/
 参考了[ipid/bupt-ncov-report](https://github.com/ipid/bupt-ncov-report) 与 [imtsuki/bupt-ncov-report-action](https://github.com/imtsuki/bupt-ncov-report-action), 十分感谢
 
 ## License
-MIT © [zzp-seeker]()
+MIT © [zzp-seeker](https://github.com/zzp-seeker)
 
 
