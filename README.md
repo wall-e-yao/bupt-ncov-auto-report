@@ -1,4 +1,6 @@
-### 北邮疫情自动填报（Python+Github Actions）长期维护
+<h2 align="center">北邮疫情自动填报（Python+Github Actions）长期维护</h2>
+
+
 ## 特点：
 
 - 每天1：10和7：10自动填报（可通过main.yml修改）
@@ -85,7 +87,11 @@ on:
 cron里的"10 1,7 * * \*"代表每天的1：10和7点10，[https://crontab.guru/#10_1,7_*_*_*](https://crontab.guru/#10_1,7_*_*_*) 用这个网站来选取你想要的时间
 ### 更改打卡的固定数据
 在 [https://app.bupt.edu.cn/ncov/wap/default/index](https://app.bupt.edu.cn/ncov/wap/default/index) 进行填报，全部填完后最后不要提交，f12打开控制台，在Console页面下输入代码vm.info回车得到填报数据，替换掉 constant.py 里的INFO变量
-​
 
+## Credit
+参考了[ipid/bupt-ncov-report](https://github.com/ipid/bupt-ncov-report) 与 [imtsuki/bupt-ncov-report-action](https://github.com/imtsuki/bupt-ncov-report-action), 十分感谢
+
+## License
+MIT © [zzp-seeker]()
 
 
