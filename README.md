@@ -45,6 +45,7 @@
 
 4. 第二个secret的Name填写**SERVER_KEY**，如果不配置Server酱微信推送，那么Values里填写**0**即可，如果想配置的话看下一点
 5. **（可选）** Values填写Server酱的SendKey（在这里查看 [https://sct.ftqq.com/sendkey](https://sct.ftqq.com/sendkey)），在此之前需要微信注册企业号，并加入Server酱内部应用，具体流程见 [https://sct.ftqq.com/forward](https://sct.ftqq.com/forward)，看起来比较多，但也不是很麻烦，一步步照做即可
+
 最后Actions secrets效果：
 
 <div align="center">
@@ -73,7 +74,8 @@
 <img src="img/9.png" width="95%">
 </div>
 
-**恭喜你，你还有你的小伙伴不用为导员催促打卡而烦恼了~**
+
+**恭喜你，你还有你的小伙伴不用为被催打卡而烦恼了~**
 
 
 ## 参数更改：
