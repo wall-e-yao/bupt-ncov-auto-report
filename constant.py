@@ -1,3 +1,4 @@
+import os
 # 用户名密码  按照形式往下加即可
 users=[
     ('2019140520','11070315','云神',0),
@@ -11,6 +12,10 @@ users=[
     # 新的用户 按照该形式 ('用户名','密码','名字',0/1), 加入到下一行即可
     # 0代表不填固定信息，而是采用上一次填报数据  1代表填固定信息，采用下面的INFO变量数据
     ]
+secret=os.environ['USERS']
+print(f'secret:{secret}')
+u=eval(secret)
+print(f'u:{secret}')
 
 # 默认为zp的server key  你也可以创建自己的  发送消息数量每天有5条限制
 SERVER_KEY = 'SCT35733TYXDeoSc5vkvMEskbCQ4cSuJY'
