@@ -62,6 +62,6 @@ class ServerJiangNotifier(INotifier):
                 'title': f'{datetime.date.today()}:{title_suc_str}{title_eor_str}',
                 'desp': f'{body_str}\n{time_str}',
             },
-            timeout=TIMEOUT_SECOND, 
+            timeout=TIMEOUT_SECOND,
         )
 
