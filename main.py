@@ -3,10 +3,10 @@ from constant import *
 
 import requests, re, json, copy, traceback
 
-# notifier = ServerJiangNotifier(
-#     sckey=SERVER_KEY,
-#     sess=requests.Session()
-# )
+notifier = ServerJiangNotifier(
+    sckey=SERVER_KEY,
+    sess=requests.Session()
+)
 session = requests.Session()
 
 
@@ -79,7 +79,7 @@ for user in  users:
     names+=[name]
 
 # 将执行结果通过 INotifier 通知用户
-# print(f'通过「{notifier.PLATFORM_NAME}」给用户发送通知')
-# notifier.notify(success=successs, msg=ress,username=usernames,name=names)
+print(f'通过「{notifier.PLATFORM_NAME}」给用户发送通知')
+notifier.notify(success=successs, msg=ress,username=usernames,name=names)
 
 
