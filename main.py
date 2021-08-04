@@ -75,12 +75,14 @@ for user in  USERS:
     usernames+=[username]
     names+=[name]
 
-
-notifier = ServerJiangNotifier(
-    sckey=SERVER_KEY,
-    sess=requests.Session()
-)
-print(f'通过「{notifier.PLATFORM_NAME}」给用户发送通知')
-notifier.notify(success=successs, msg=ress,username=usernames,name=names)
+try:
+    notifier = ServerJiangNotifier(
+        sckey=SERVER_KEY,
+        sess=requests.Session()
+    )
+    print(f'通过「{notifier.PLATFORM_NAME}」给用户发送通知')
+    notifier.notify(success=successs, msg=ress,username=usernames,name=names)
+except:
+    print("可能由于KEY不对或者网络波动，SERVER酱发送失败")
 
 

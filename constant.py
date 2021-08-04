@@ -62,7 +62,7 @@ INFO = r"""{
         }"""
 
 REASONABLE_LENGTH = 24
-TIMEOUT_SECOND = 15
+TIMEOUT_SECOND = 25
 
 class HEADERS:
     REFERER_LOGIN_API = 'https://app.bupt.edu.cn/uc/wap/login'
