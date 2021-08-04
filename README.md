@@ -84,9 +84,10 @@
 ```python
 on:
   schedule:
-    - cron: "10 1,7 * * *"
+    - cron: "10 17,23 * * *"
 ```
-cron里的"10 1,7 * * \*"代表每天的1：10和7点10，[https://crontab.guru/#10_1,7_*_*_*](https://crontab.guru/#10_1,7_*_*_*) 用这个网站来选取你想要的时间
+cron里的"10 17,23 * * \*"代表每天的17：10和23：10，然而这是UTC，北京时间为UTC+8，代表1：10和7：10
+[https://crontab.guru/#10_1,7_*_*_*](https://crontab.guru/#10_1,7_*_*_*) 用这个网站来选取你想要的时间
 ### 更改打卡的固定数据
 在 [https://app.bupt.edu.cn/ncov/wap/default/index](https://app.bupt.edu.cn/ncov/wap/default/index) 进行填报，全部填完后最后不要提交，f12打开控制台，在Console页面下输入代码vm.info回车得到填报数据，替换掉 constant.py 里的INFO变量
 
