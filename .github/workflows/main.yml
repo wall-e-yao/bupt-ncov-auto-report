@@ -1,6 +1,9 @@
-name: Python package
+name: BUPT ncov auto-report Python+Actions V3.0
 
-on: [push]
+on:
+  schedule:
+    - cron: "10 1,7 * * *"
+  [push]
 
 jobs:
   build:

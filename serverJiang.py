@@ -16,7 +16,7 @@ class ServerJiangNotifier(INotifier):
         title_suc,title_eor,bodys=[],[],[]
         title_suc_str,title_eor_str,body_str='','',''
 
-        for i in range(len(users)):
+        for i in range(len(USERS)):
             if success[i]:
                 title_suc += [f'{name[i]}']
                 if msg[i] is not None:
@@ -64,18 +64,4 @@ class ServerJiangNotifier(INotifier):
             },
             timeout=TIMEOUT_SECOND,
         )
-        # 处理可能出现的异常情况
-        try:
-            sc_res = sc_res_raw.json()
-        except:
-            raise RuntimeError(
-                f'Server 酱的返回值不能解析为 JSON，可能您的 SCKEY 配置有误。'
-                f'API 的返回是：\n{sc_res_raw.text}\n您输入的 SCKEY 为\n{self._sckey}'
-            )
 
-        error = sc_res.get('error')
-        print(error)
-        if error != 'SUCCESS':
-            raise RuntimeError(
-                f'Server 酱调用失败，可能您的 SCKEY 配置有误。API 的返回是：\n{sc_res}\n'
-                f'您输入的 SCKEY 为\n{self._sckey}')
