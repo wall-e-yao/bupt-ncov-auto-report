@@ -3,7 +3,7 @@
 
 ## 特点：
 
-- 每天1：10和7：10自动填报（可通过main.yml修改）
+- 每天0-1点和7-8点自动填报（可通过main.yml修改）
 - 运行失败会自动往邮箱（注册github所用邮箱）发送邮件
 - 可以多人同时填报（可以帮小伙伴一起打卡哦）
 - 填报情况可以使用上一次打卡数据，也可以使用固定数据（地点始终位于北邮）
@@ -86,7 +86,7 @@ on:
   schedule:
     - cron: "*/10 16,23 * * *"
 ```
-cron里的"10 16,23 * * \*"代表 at every 10th minute past hour 16 and 23，然而这是UTC，北京时间为UTC+8，代表1点与7点之后每隔10分钟
+cron里的"10 16,23 * * \*"代表 at every 10th minute past hour 16 and 23，然而这是UTC，北京时间为UTC+8，代表0点与7点之后每隔10分钟
 [https://crontab.guru/#*/10_16,23_*_*_*](https://crontab.guru/#*/10_16,23_*_*_*) 用这个网站来选取你想要的时间
 ### 更改打卡的固定数据
 在 [https://app.bupt.edu.cn/ncov/wap/default/index](https://app.bupt.edu.cn/ncov/wap/default/index) 进行填报，全部填完后最后不要提交，f12打开控制台，在Console页面下输入代码vm.info回车得到填报数据，替换掉 constant.py 里的INFO变量
