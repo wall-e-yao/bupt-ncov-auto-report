@@ -1,4 +1,4 @@
-<h2 align="center">北邮疫情自动填报（Python+Github Actions）长期维护</h2>
+<h2 align="center">:helicopter:北邮疫情自动填报（Python+Github Actions）长期维护</h2>
 
 
 ## 特点：
@@ -11,7 +11,7 @@
   ​
 
 <div align="center">
-<img src='img/1.png' width=55%/>
+<img src='img/0.png' width=55%/>
 </div>
 
 
