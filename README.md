@@ -56,13 +56,13 @@
 
 <img src="img/6.png" width="100%">
 
-点击一个**workflow**：
+点击左侧的**BUPT ncov auto-report Python**,再点击右侧的**Run workflow**,如下图所示：
 
 <div align="center">
 <img src="img/7.png" width="100%">
 </div>
 
-点击右上方**Re-run jobs**，开始重新执行，然后点进去查看执行情况
+点击这个workflow，然后再次点进去jobs查看执行情况
 
 <div align="center">
 <img src="img/8.png" >
@@ -84,10 +84,10 @@
 ```python
 on:
   schedule:
-    - cron: "10 17,23 * * *"
+    - cron: "*/10 16,23 * * *"
 ```
-cron里的"10 17,23 * * \*"代表每天的17：10和23：10，然而这是UTC，北京时间为UTC+8，代表1：10和7：10
-[https://crontab.guru/#10_1,7_*_*_*](https://crontab.guru/#10_1,7_*_*_*) 用这个网站来选取你想要的时间
+cron里的"10 16,23 * * \*"代表 at every 10th minute past hour 16 and 23，然而这是UTC，北京时间为UTC+8，代表1点与7点之后每隔10分钟
+[https://crontab.guru/#*/10_16,23_*_*_*](https://crontab.guru/#*/10_16,23_*_*_*) 用这个网站来选取你想要的时间
 ### 更改打卡的固定数据
 在 [https://app.bupt.edu.cn/ncov/wap/default/index](https://app.bupt.edu.cn/ncov/wap/default/index) 进行填报，全部填完后最后不要提交，f12打开控制台，在Console页面下输入代码vm.info回车得到填报数据，替换掉 constant.py 里的INFO变量
 
