@@ -25,7 +25,7 @@
 <img src="img/3.png" width="90%">
 </div>
 
-3. 一共有**两**个secret，第一个Name填**USERS**，Values按照如下格式填写：
+3. 一共有**两**个secret，第一个Name填**USERS**，Value按照如下格式填写：
 
 ```python
 [
@@ -43,8 +43,8 @@
 </div>
 
 
-4. 第二个secret的Name填写**SERVER_KEY**，如果不配置Server酱微信推送，那么Values里填写**0**即可，如果想配置的话看下一点
-5. **（可选）** Values填写Server酱的SendKey（在这里查看 [https://sct.ftqq.com/sendkey](https://sct.ftqq.com/sendkey)），在此之前需要微信注册企业号，并加入Server酱内部应用，具体流程见 [https://sct.ftqq.com/forward](https://sct.ftqq.com/forward)，看起来比较多，但也不是很麻烦，一步步照做即可
+4. 第二个secret的Name填写**SERVER_KEY**，如果不配置Server酱微信推送，那么Value里填写**0**即可，如果想配置的话看下一点
+5. **（可选）** Value填写Server酱的SendKey（在这里查看 [https://sct.ftqq.com/sendkey](https://sct.ftqq.com/sendkey)），在此之前需要微信注册企业号，并加入Server酱内部应用，具体流程见 [https://sct.ftqq.com/forward](https://sct.ftqq.com/forward)，看起来比较多，但也不是很麻烦，一步步照做即可
 
 最后Actions secrets效果：
 
