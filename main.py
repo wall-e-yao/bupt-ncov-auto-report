@@ -80,5 +80,8 @@ for user in  users:
 
 # 将执行结果通过 INotifier 通知用户
 print(f'通过「{notifier.PLATFORM_NAME}」给用户发送通知')
-notifier.notify(success=successs, msg=ress,username=usernames,name=names)
+try:
+    notifier.notify(success=successs, msg=ress,username=usernames,name=names)
+except:
+    pass
 
