@@ -83,6 +83,6 @@ try:
     print(f'通过「{notifier.PLATFORM_NAME}」给用户发送通知')
     notifier.notify(success=successs, msg=ress,username=usernames,name=names)
 except:
-    print("可能由于KEY不对或者网络波动，SERVER酱发送失败")
+    print(r"可能由于 「SERVER_KEY未设置」 或 「SERVER_KEY不正确」 或 「网络波动」 ，SERVER酱发送失败")
 
 
