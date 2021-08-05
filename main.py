@@ -68,8 +68,8 @@ for user in  USERS:
         success = False
         res = traceback.format_exc()
 
-    print(f'{name}填报成功!' if success else f'{name}填报失败!', end='')
-    # print(f'填报数据:\n{data}\n服务器返回数据:\n{res}' if success else f'填报数据:\n{data}\n发生如下异常:\n{res}')
+    print(f'{name}填报成功!服务器返回数据:\n{res}' if success else f'{name}填报失败!发生如下异常:\n{res}')
+    # print(f'填报数据:\n{data}\n' if success else f'填报数据:\n{data}\n')
 
     successs+=[success]
     ress+=[res]
