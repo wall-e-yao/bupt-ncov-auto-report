@@ -1,9 +1,9 @@
 <h2 align="center">:helicopter:北邮疫情自动填报（Python+Github Actions）长期维护</h2>
 <p align="center">
     <a href="https://github.com/zzp-seeker/bupt-ncov-auto-report/actions/workflows/main.yml">
-        <img src="https://github.com/zzp-seeker/bupt-ncov-auto-report/actions/workflows/main.yml/badge.svg?branch=master" alt="徽章">
+        <img src="https://github.com/zzp-seeker/bupt-ncov-auto-report/actions/workflows/main.yml/badge.svg?branch=master" alt="Action Badge">
     </a>
-    <img src="https://img.shields.io/badge/python-%3e%3d%203.6-blue" alt="Python 版本">
+    <img src="https://img.shields.io/badge/python-%3d%203.7-blue" alt="Python Version">
 </p>
 
 
