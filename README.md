@@ -69,7 +69,7 @@
 <img src="img/7.png" width="100%">
 </div>
 
-点击这个workflow，然后再次点进去jobs查看执行情况
+点击这个workflow（没看到的话请刷新一下），然后再次点进去jobs查看执行情况
 
 <div align="center">
 <img src="img/8.png" >
