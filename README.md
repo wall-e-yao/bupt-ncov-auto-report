@@ -13,7 +13,7 @@
 - 每天7-8点自动多次填报（可通过main.yml修改）
 - 运行失败会自动往邮箱（注册github所用邮箱）发送邮件
 - 可以多人同时填报（可以帮小伙伴一起打卡哦）
-- 填报情况可以使用上一次手动打卡数据（如需更换填报情况请手动打卡一次），也可以使用固定数据（地点始终位于北邮）
+- 填报情况可以使用上一次打卡数据（如需更换请于当日脚本运行前手动打卡），也可以使用固定数据（地点始终位于北邮）
 - **（可选）** 填报结果通过Server酱推送至微信
   ​
 
@@ -43,7 +43,7 @@
 ]
 ```
 
-相当于**列表**里面有很多**元组**，每个元组代表一个用户，可以有任意多个。每个元组有**四个元素**，前两个分别为**学号**和**密码**，字符串格式（可自行通过 [https://app.bupt.edu.cn/ncov/wap/default/index](https://app.bupt.edu.cn/ncov/wap/default/index) 登陆验证账号密码正确性，密码一般为身份证后8位），第三个为**用户名**（随便填，用于控制台与Server显示），第四个为是否用上一次打卡数据，**0或者1**，0代表使用上一次打卡数据（某一次自己在脚本运行前打卡之后都采用这次打卡数据），1代表使用固定数据（固定数据的地点始终位于北邮），以下是一个样例：
+相当于**列表**里面有很多**元组**，每个元组代表一个用户，可以有任意多个。每个元组有**四个元素**，前两个分别为**学号**和**密码**，字符串格式（可自行通过 [https://app.bupt.edu.cn/ncov/wap/default/index](https://app.bupt.edu.cn/ncov/wap/default/index) 登陆验证账号密码正确性，密码一般为身份证后8位），第三个为**用户名**（随便填，用于控制台与Server显示），第四个为是否用上一次打卡数据，**0或者1**，0代表使用上一次打卡数据（**某一次自己在脚本运行前打卡之后都采用这次打卡数据**），1代表使用固定数据（固定数据的地点始终位于北邮），以下是一个样例：
 
 <div align="center">
 	<img src="img/4.png" width="55%">
@@ -98,6 +98,7 @@ cron里的"\*/20 16,23 * * \*"代表 at every 20th minute past hour 16 and 23，
 [https://crontab.guru/#*/10_16,23_*_*_*](https://crontab.guru/#*/10_16,23_*_*_*) 用这个网站来选取你想要的时间
 ### 更改打卡的固定数据
 在 [https://app.bupt.edu.cn/ncov/wap/default/index](https://app.bupt.edu.cn/ncov/wap/default/index) 进行填报，全部填完后最后不要提交，f12打开控制台，在Console页面下输入代码vm.info回车得到填报数据，替换掉 constant.py 里的INFO变量
+
 
 ## Credit
 参考了[ipid/bupt-ncov-report](https://github.com/ipid/bupt-ncov-report) 与 [imtsuki/bupt-ncov-report-action](https://github.com/imtsuki/bupt-ncov-report-action), 十分感谢
