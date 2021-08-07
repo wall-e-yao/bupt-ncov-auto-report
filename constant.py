@@ -104,7 +104,7 @@ class INotifier(metaclass=ABCMeta):
         :return: 通知平台名
         """
     @abstractmethod
-    def notify(self, *, success, msg, username, name) -> None:
+    def notify(self, *, success, msg, data,username, name) -> None:
         """
         通过该平台通知用户操作成功的消息。失败时将抛出各种异常。
         :param success: 表示是否成功
